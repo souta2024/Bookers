@@ -1,6 +1,9 @@
 <strong>Title:</strong>
-<span><%= @book.title %></span><br>
+<span><%= @book.title %></span>
+<br>
 <strong>Body:</strong>
 <span><%= @book.body %></span>
-
-
+<br>
+<span><%= link_to 'Edit', edit_book_path(@book.id) %></span>
+<span>|</span>
+<span><%= link_to 'Back', books_path(@book.id) %></span>
